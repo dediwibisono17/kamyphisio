@@ -1,0 +1,65 @@
+.banner {
+    padding: 0;
+    @media screen and (max-width: 768px) {
+        min-height: auto;
+    }
+    .slider-banner {
+        // position: relative;
+        // // inset: 0;
+        // width: 100%;
+        // height: 100%;
+    }
+    .allsx {
+        position: relative;
+        height: 100vh;
+        @media screen and (max-width: 768px) {
+            height: 80vh;
+        }
+        .image {
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 2;
+            }
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .title {
+            position: absolute;
+            left: 8%;
+            z-index: 5;
+            bottom: 24%;
+            h2 {
+                font-family: "Marcellus", sans-serif;
+                font-size: 3rem;
+                font-style: normal;
+                font-weight: 400;
+                color: white;
+            }
+        }
+    }
+    .btn-call {
+        position: absolute;
+        left: 8%;
+        bottom: 10%;
+        background: rgb(0 140 183);
+        border-radius: 200px;
+        padding: 12px 36px 16px;
+        font-size: 1.5rem;
+        font-family: "Yeseva One";
+        // font-weight: 700;
+        color: wheat;
+    }
+}

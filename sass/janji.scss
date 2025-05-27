@@ -1,0 +1,191 @@
+.harga {
+    // background: #e5eaec;
+    background: url(../img/pricing-bg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 130px 0 120px;
+    background-color: #e5eaec;
+    overflow: hidden;
+    border-radius: 50px 50px 0 0;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(252.64deg, rgba(2, 48, 71, 0) 50.13%, rgba(0, 0, 0, 0.9) 77.06%, #021c29 96.7%);
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        font-size: 2.8rem;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
+    .pricing-item {
+        position: relative;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: calc(100% - 30px);
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+
+    .pricing-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: 20%;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pricing-item.highlighted-box::after {
+        content: "Recommended";
+        position: absolute;
+        top: 0;
+        left: 30px;
+        transform: translateY(-100%);
+        background-color: #fff;
+        color: var(--primary-color);
+        font-size: 10px;
+        line-height: normal;
+        border-radius: 5px 5px 0 0;
+        padding: 8px;
+        z-index: 1;
+    }
+
+    .pricing-header {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+
+    .pricing-title {
+        margin-right: 10px;
+    }
+
+    .pricing-title h4 {
+        font-size: 26px;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    .pricing-tag h2 {
+        font-family: var(--default-font);
+        font-size: 20px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .pricing-tag h2 sub {
+        font-size: 14px;
+        font-weight: 300;
+        bottom: 0;
+    }
+
+    .pricing-tag p {
+        font-size: 10px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .pricing-body {
+        position: relative;
+        z-index: 1;
+    }
+
+    .pricing-content {
+        margin-bottom: 20px;
+    }
+
+    .pricing-content p {
+        color: #fff;
+        margin: 0;
+    }
+
+    .pricing-list {
+        margin-bottom: 20px;
+    }
+
+    .pricing-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .pricing-list ul li {
+        position: relative;
+        color: #fff;
+
+        // margin-bottom: 15px;
+        padding-left: 25px;
+    }
+
+    .pricing-list ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    .pricing-list ul li::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background: url(../images/icon-pricing-list.svg) no-repeat;
+        background-position: left center;
+        background-size: cover;
+        width: 16px;
+        height: 16px;
+    }
+
+    .pricing-btn {
+        padding: 8px 0;
+    }
+
+    .pricing-btn a {
+        position: relative;
+        font-family: var(--accent-font);
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #fff;
+        padding-right: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .pricing-btn a:hover {
+        color: var(--primary-color);
+    }
+
+    .pricing-btn a::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background-color: var(--primary-color);
+        background-image: url("../images/arrow-readmore-btn.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 16px auto;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}

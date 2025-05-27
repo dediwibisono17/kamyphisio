@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Marcellus&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Press+Start+2P&family=Quicksand:wght@300..700&family=Righteous&family=Russo+One&family=Sigmar&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+
+section {
+    position: relative;
+    padding: 32px 0;
+    width: 100%;
+    z-index: 9;
+    min-height: 100vh;
+}
+.totop {
+    position: relative;
+    z-index: 20;
+}
+main,
+body {
+    overflow-x: clip;
+    background: #e5eaec;
+    font-family: "jost";
+    p,
+    li {
+        font-family: "Jost", sans-serif;
+        font-size: 1.2rem;
+        @media screen and (max-width: 768px) {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+h2,
+h3,
+h4 {
+    font-family: "Marcellus", sans-serif;
+}
+
+.slick {
+    &-next,
+    &-prev {
+        z-index: 17 !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(#ce9352, 0.8);
+        &:focus,
+        &:hover {
+            background: rgba(#ce9352, 0.5);
+        }
+        &::before {
+            font-family: "Font Awesome 5 Pro" !important;
+            font-size: 32px !important;
+            color: #fff !important;
+            font-weight: 700 !important;
+            @media screen and (max-width: 766px) {
+                font-size: 32px !important;
+            }
+        }
+    }
+    &-prev {
+        left: 16px !important;
+        @media screen and (max-width: 768px) {
+            left: -16px !important;
+        }
+        &::before {
+            content: "\f104" !important;
+        }
+    }
+    &-next {
+        right: 16px !important;
+        @media screen and (max-width: 768px) {
+            right: -16px !important;
+        }
+        &::before {
+            content: "\f105" !important;
+        }
+    }
+}
+
+.wrap-web {
+    width: 780px;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    }
+}
