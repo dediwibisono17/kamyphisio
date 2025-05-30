@@ -57,7 +57,7 @@ h4 {
     &-prev {
         left: 16px !important;
         @media screen and (max-width: 768px) {
-            left: -16px !important;
+            left: 8px !important;
         }
         &::before {
             content: "\f104" !important;
@@ -66,7 +66,7 @@ h4 {
     &-next {
         right: 16px !important;
         @media screen and (max-width: 768px) {
-            right: -16px !important;
+            right: 8px !important;
         }
         &::before {
             content: "\f105" !important;
