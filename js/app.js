@@ -1,5 +1,6 @@
 $('.slider-banner').slick({
-    fade: true,
+    // fade: true,
+    autoplay: true
 });
 
 
