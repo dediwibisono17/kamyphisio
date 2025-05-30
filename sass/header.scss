@@ -6,7 +6,7 @@ header {
     height: 50px;
     z-index: 12;
     @media screen and (max-width: 768px) {
-        height: 100vh;
+        // height: 100vh;
         z-index: 88;
     }
     a {
@@ -93,6 +93,7 @@ header {
             transition: 0.5s all ease;
             z-index: 66;
             padding-inline-start: 40px;
+            height: 100vh;
         }
         .main-menux li a {
             margin-bottom: 10px;
